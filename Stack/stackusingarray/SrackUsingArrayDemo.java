@@ -92,17 +92,25 @@ public class SrackUsingArrayDemo {
         ms.pop();	//trying to remove element when stack is already empty
         
         System.out.println("=================");
+        
         ms.push(10);
         ms.push(30);
         ms.push(50);
         ms.push(40);
+        
+        System.out.println("=================");
+        
+        System.out.println("Top element is :" + ms.peek());
+        
         System.out.println("=================");
         ms.display();
+        
         System.out.println("=================");
        // System.out.println("1. Size of stack after push operations: " + ms.size());
-        ms.pop();
-        ms.pop();
-        ms.pop();
+        
+        System.out.println(ms.pop() + " Popped from stack");
+        System.out.println(ms.pop() + " Popped from stack");
+        
         System.out.println("=================");
         ms.display();
         System.out.println("=================");
